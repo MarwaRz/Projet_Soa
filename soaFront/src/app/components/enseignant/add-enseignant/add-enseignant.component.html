@@ -1,0 +1,27 @@
+<div class="container-xl">
+    <div class="table-responsive">
+        <div class="table-wrapper">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                            <h1 class="mb-5">Ajouter Enseignant </h1>
+                        </div>                     </div>
+            </div>
+            <form (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" [(ngModel)]="teacher.nom" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom:</label>
+                    <input type="text" id="prenom" name="prenom" [(ngModel)]="teacher.prenom" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="matiere">Matière:</label>
+                    <input type="text" id="matiere" name="matiere" [(ngModel)]="teacher.matiere" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Add Teacher</button>
+            </form>
+        </div>
+    </div>
+</div>

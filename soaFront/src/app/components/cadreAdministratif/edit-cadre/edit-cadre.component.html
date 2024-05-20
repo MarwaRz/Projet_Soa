@@ -1,0 +1,28 @@
+<div class="container-xl">
+    <div class="table-responsive">
+        <div class="table-wrapper">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                            <h1 class="mb-5">Modifier Administratif </h1>
+                        </div>                     </div>
+                
+            </div>
+            <form (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" [(ngModel)]="staff.nom" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom:</label>
+                    <input type="text" id="prenom" name="prenom" [(ngModel)]="staff.prenom" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="fonction">Fonction:</label>
+                    <input type="text" id="fonction" name="fonction" [(ngModel)]="staff.fonction" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
